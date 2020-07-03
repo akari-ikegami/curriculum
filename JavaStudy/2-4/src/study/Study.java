@@ -20,10 +20,7 @@ public class Study {
          *     printFruitsの引数にはFruitsConstantsから呼び出した値を設定してください。
          */
     	Fruits.printFruits(FruitsConstants.FRUITS_LEMON_04,FruitsConstants.FRUITS_COUNT_20);
-    	
-//    	FruitsConstants fc = new FruitsConstants(); 
 
-    	
 
     }
 }
