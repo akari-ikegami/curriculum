@@ -2,7 +2,6 @@
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.List;
 
 
@@ -37,7 +36,7 @@ public class Study {
          * putメソッドを使って要素の追加を行う。shopListの１番目の要素"牛乳"を取り出す時、同時に180という数字も取り出す。]
          *
          */
-        HashMap<String, Integer> shopMap = new LinkedHashMap<String, Integer>();
+        HashMap<String, Integer> shopMap = new HashMap<String, Integer>();
         shopMap.put(shohinList.get(0), 125);
         shopMap.put(shohinList.get(1), 180);
         shopMap.put(shohinList.get(2), 350);
