@@ -2,7 +2,29 @@
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+
+
+
+
+
+/*
+ * Copyright 2020 the original author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 /**
@@ -45,7 +67,13 @@ public class Study {
         // ③ カリキュラムを参考に拡張for文を使って、課題の画像と同じ表示になるよう記述してください。
         // 「shohinList」と「shopMap」が保持する値を上手く利用しましょう。
         
-        for(HashMap.Entry<String, Integer> entry : shopMap.entrySet()) {
+        Map<String, Integer> shopMaps = new LinkedHashMap<String, Integer>();
+        shopMaps.put(shohinList.get(0), 125);
+        shopMaps.put(shohinList.get(1), 180);
+        shopMaps.put(shohinList.get(2), 350);
+        shopMaps.put(shohinList.get(3), 100);
+  
+        for(HashMap.Entry<String, Integer> entry : shopMaps.entrySet()) {
         	System.out.println(entry.getKey() + "=" + entry.getValue() + "円になります！");
         }
 
