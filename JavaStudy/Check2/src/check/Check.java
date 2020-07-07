@@ -4,16 +4,14 @@ import constants.Constants;
 
 public class Check {
 	
-	private String firstName = "光里";
-	private String lastName = "池上";
-	
-	private void printName() {
-		System.out.println("printNameメソッド→" + this.lastName + this.firstName);
-	}
+	private static String firstName = "光里";
+	private static String lastName = "池上";
 	
 	public static void main(String[] args) {
-		Check check = new Check();
-		check.printName();
+		
+		System.out.println("printNameメソッド→"+printName(firstName,lastName));
+	    System.out.println();
+		
 		
 		Pet pet = new Pet(Constants.CHECK_CLASS_JAVA,Constants.CHECK_CLASS_HOGE);
 		pet.introduce();
@@ -21,5 +19,8 @@ public class Check {
 		RobotPet robotPet = new RobotPet(Constants.CHECK_CLASS_R2D2,Constants.CHECK_CLASS_LUKE);
 		robotPet.introduce();
 	}
+	
+	 private static String printName(String firstName, String lastName) {
+	    	return lastName + firstName;}
 
 }
