@@ -1,0 +1,24 @@
+h1{
+  color: #0000FF;
+}
+/* コメント */
+
+  p{
+    font-size: 30px;
+    font-family: sans-serif;
+  }
+
+  h1{
+    background-color: #ddd;
+    width: 500px;
+    height: 100px;
+  }
+
+  img{
+    width: 500px;
+    height: 500px;
+  }
+
+  .select{
+    color: red;
+  }
