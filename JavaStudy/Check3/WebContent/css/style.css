@@ -1,0 +1,36 @@
+
+
+
+td{
+	border: solid 1px black;
+	width: 100px;
+}
+
+.wrapper{
+	background-color: gray;
+}
+
+label{
+	display: inline-block;
+	padding: 10px;
+	color: white;
+	padding: 10px;
+	font-size: 10px;
+}
+
+.date{
+	color:black;
+	float:right;
+}
+
+.header{
+	display:inline-block;
+	padding-right:20px;
+}
+
+.main{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
