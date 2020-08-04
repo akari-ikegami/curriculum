@@ -60,8 +60,14 @@ public class ExException {
                 case CONST_EXCEPTION_TRIGER_NULL:
                     // 問①: 強制的に「NullPointerException」を発生させるメソッドを作成し、呼び出しなさい。
                     // 問①は最下部にもあります。
-                    // ルール: ここへ作成したメソッドを呼び出す
+                    // ルール: ここへ作成したメソッドを呼び出す。
+//                	try {
+//                		sun();
+//                	}catch(NullPointerException e) {
+//                		System.out.println(CONST_MSG_NULLPO);
+//                	}
                 	sun();
+
                     break;
                 case CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS:
                     // 問②: 「throw」を使用せずに「ArrayIndexOutOfBoundsException」を発生させる処理を記述しなさい。
@@ -69,7 +75,7 @@ public class ExException {
                     // ここへ記述
                 	int[] arrayNumbers = {1,2,3,4,5};
                 	System.out.println(arrayNumbers[8]);
-                	
+
                     break;
                 case CONST_EXCEPTION_TRIGER_CAST:
                     String castedStrValue = (String) CONST_OBJ_FOR_CLASS_CAST;
@@ -107,9 +113,9 @@ public class ExException {
     private static void sun() throws NullPointerException{
     	String str = null;
         System.out.println(str.length());
-    } 
-    
-    
+    }
+
+
     /**
      * 例外処理のメッセージを出力
      *
